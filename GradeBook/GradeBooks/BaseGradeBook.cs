@@ -111,7 +111,7 @@ namespace GradeBook.GradeBooks
         {
             var weighted = 0;
 
-            if (studentType == StudentType.Honors || studentType == StudentType.DualEnrolled)
+            if (IsWeighted && (studentType == StudentType.Honors || studentType == StudentType.DualEnrolled))
             {
                 weighted += 1;
             }
